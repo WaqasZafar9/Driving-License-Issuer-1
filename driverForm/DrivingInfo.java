@@ -1,3 +1,5 @@
+package driverForm;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -131,6 +133,9 @@ public class DrivingInfo extends JFrame {
 
         nameInput=new JTextField();
         infoTemp.add(nameInput);
+
+        picture=addImage();
+        infoTemp.add(picture);
 
         cnic=new JLabel("Cnic No :");
         infoTemp.add(cnic);
