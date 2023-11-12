@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import driverForm.DrivingInfo;
 
 class Login{
 
@@ -64,6 +65,9 @@ class Login{
                 if(userName.getText().equals(user) && enteredPassword.equals(pswd)){
 
                         JOptionPane.showMessageDialog(null, "User Login SuccessFully");
+                        mainFrame.dispose();
+                        new DrivingInfo();
+
 
                 }
                 else {
